@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css">
+    
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Kavyanjali Thunuguntla </span></h1>
+        </div>
+    </div>
+</div> 
+<!-------------about------->
+<div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="">
+        </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Motivated and innovative software developer currently pursuing an Integrated M Tech in Computer Science at VIT. Skilled
+                in Python, C/C++, JavaScript, and Unix/Linux environments. Experienced in data structures, algorithms, AI, and machine
+                learning, with a proven track record of impactful Web and Mobile development projects.
+  </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                </div>
+
+                <!-- Inside your existing HTML structure, replace the skills section with the following code -->
+                <div class="tab-contents" id="skills">
+                    <div class="container">
+                        <div class="skills-table">
+                            <table>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Skills</th>
+                                </tr>
+                                <tr>
+                                    <td>Programming Languages</td>
+                                    <td>Python, C++, C, Java, SQL</td>
+                                </tr>
+                                <tr>
+                                    <td>Web Technologies</td>
+                                    <td>HTML5, CSS3, JavaScript, jQuery, React.js, JSON, Redux, streamlit,
+                                        Bootstrap</td>
+                                </tr>
+                                <tr>
+                                    <td>AI & ML Toolkit</td>
+                                    <td>NumPy, Pandas, Keras, Data Mining, Scikit-learn, TensorFlow, Large Language models (LLM), API.</td>
+                                </tr>
+                                <tr>
+                                    <td>Tools</td>    
+                                    <td>VS Code, MS Office, Microsoft Azure, Jenkins, Git</td>
+                                </tr>
+                                <tr>
+                                    <td>Interpersonal Skills</td>
+                                    <td>Business Communication, Scalability, Critical Thinking, Problem-Solving, Leadership, Research</td>
+                                </tr>
+                                <!-- Add other skill categories here -->
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <div>
+                        <li><b>Orblike Technologies | India | Software Developer Intern<br><span>May2023 - Aug 2023</span></b></li>
+                        • Engaged in Sprint review Team meetings to demonstrate completed work and gather feedback from stakeholders.
+                       <br>
+                        • Designed and implemented the user interface using HTML5, CSS3, JavaScript, Redux, ReactJS.
+                        <br>
+                        • Achieved a 20% reduction in API response time through query optimization, improving application efficiency.
+                        <br>
+                        • Participated in code reviews and contributed to continuous integration and deployment processes using Git.</p>
+                        </div>
+                    </ul>
+                </div>
+                <!-- Inside your existing HTML structure, replace the Education tab content -->
+                <div class="tab-contents" id="Education">
+                    <ul class="education-list">
+                        <li>
+                            <div class="education-item">
+                                <h4>Vellore Institute of Technology&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                                <p>Integrated Mtech Computer Science Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; May 2026</p>
+                                <p>CGPA:8.8/10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            </div>
+                        </li>
+                        <!-- Add other education entries in a similar structure -->
+                    </ul>
+                </div>
+
+
+            </div>
+        
+    </div>
+</div> 
+
+<!--------------------------------Projects------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Projects </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Commerce.jpg">
+                <div class="layer">
+                    <h3>Commerce Bank pro</h3>
+                    <p>Banking app</p>
+                    <a href="https://github.com/Kavyanjali0202/CommerceBank"<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/VirtualDoc.jpg">
+                <div class="layer">
+                    <h3>Virtual Doc Center</h3>
+                    <p>Assisting persons for the medical services</p>
+                    <a href="https://github.com/Apuroop-Thunuguntla/Virtual-Doctor-Assistant.git" <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/pdfchat.jpg">
+                <div class="layer">
+                    <h3>ChatBot Pro</h3>
+                    <p>Chat with your own pdfs by uploading</p>
+                    <a href="https://github.com/Apuroop-Thunuguntla/Chat-with-pdf.git" <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Kavyanjali0202" class="btn">See more</a>
+    </div>
+
+</div>
+<!-----------------------------------Contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>tkavya6820@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+91 9440713073</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/kavya_thunuguntla/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/Kavyanjali0202"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kavya6820/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Kavyanjali resume.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"> </textarea>
+                    <button type="submit" class=" btn btn2">Submit</button>
+                </form> 
+                <span id="msg"> </span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script> 
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+         sidemenu.style.right = "0";
+    }
+    function closemenu() {
+         sidemenu.style.right = "-200px";
+    }
+</script> 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwKZJb7gzohVd_QS0Kmhjomsk065eprlRMKZHMr2PqqvDRD1StriDdfKM6wQCFThFgRig/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
