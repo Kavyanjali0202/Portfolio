@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +13,18 @@ body{
     background: #080808;
     color: #fff;
 }
+
+
+.logo-name {
+    font-size: 2rem; /* Large and impactful */
+    font-family: 'Playfair Display', serif; /* Elegant and classic font */
+    background: linear-gradient(to right, #ff8fab, #ff004f); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Gradient applies only to text */
+    display: inline-block;
+}
+
+
 #header{
     width: 100%;
     height: 100vh;
@@ -22,6 +36,28 @@ body{
     padding: 10px 10%;
 
 }
+.resume-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 2px solid #ff8fab; /* Soft pink border */
+    border-radius: 25px; /* Rounded edges */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.resume-btn i {
+    margin-right: 6px;
+}
+
+.resume-btn:hover {
+    border-color: #ff4f74; /* Darker pink on hover */
+    color: #ff4f74; /* Matching text color */
+    transform: translateY(-2px);
+}
+
+
 nav {
     display: flex;
     align-items: center;
@@ -29,10 +65,7 @@ nav {
     flex-wrap: wrap;
 }
 
-.logo{
-    width: 140px;
-}
- 
+
 nav ul li{
     display:inline-block;
     list-style: none;
@@ -62,18 +95,89 @@ nav ul li a:hover::after{
     width: 100%;
 
 }
-.header-text{
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.header-text {
     margin-top: 20%;
     font-size: 30px;
-
 }
-.header-text h1{
+
+.header-text h1 {
     font-size: 60px;
     margin-top: 20px;
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    overflow: hidden;
+    /* Hides overflow text */
+    border-right: 3px solid #ff004f;
+    /* Simulates typing cursor */
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 0.6s infinite;
 }
-.header-text h1 span{
-    color:#ff004f;
 
+.header-text h1 span {
+    color: #ff004f;
+}
+
+/* Typing Effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor Blinking */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Image Styling */
+.header-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .header-image {
+        justify-content: center;
+    }
+
+    .header-image img {
+        width: 200px;
+    }
 }
 /* -------------about----------*/
 #about{
@@ -257,7 +361,7 @@ nav ul li a:hover::after{
     margin-bottom: 30px;
 }
 .about-col-1 img{
-    width: 100%;
+    width: 80%;
     border-radius: 15px;  
 }
 .about-col-2{
@@ -387,7 +491,71 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 
+
 }
+/* Project Section Styling */
+#projects {
+    text-align: center;
+    padding: 50px 10%;
+    background-color: #000; /* Black background */
+}
+
+/* Flexbox Layout for Equal Heights */
+.project-container {
+    display: flex;
+    justify-content: space-between; /* Ensures spacing between columns */
+    gap: 20px;
+    align-items: stretch; /* Ensures all cards are of equal height */
+}
+
+/* Project Cards */
+.project-card {
+    flex: 1; /* Ensures equal width */
+    padding: 20px;
+    background-color: #111;
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Aligns content properly */
+    justify-content: space-between; /* Makes text distribute evenly */
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Project Titles */
+.project-title {
+    color: #ff004f;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Tech Stack Labels */
+.tech-stack {
+    margin-top: auto; /* Pushes tech stack to the bottom */
+    color: #ff004f;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+
 /*-------------contact...................*/
 
 .contact-left{
@@ -451,6 +619,40 @@ nav .fa-solid {
 }
 
 /* Media query for screens up to 600px */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-text {
+    flex: 1 1 auto;
+    min-width: 50%;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    /* Adjust as needed */
+    white-space: nowrap;
+    /* Keeps name in one line */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Optional: adds '...' if text overflows */
+}
+.header-image {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+.header-image img {
+    width: 300px; /* Adjust as needed */
+    height: auto;
+    border-radius: 15px; /* Adds a subtle rounded effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
+
 @media only screen and (max-width: 600px) {
     #header {
         background-image: url(images/mobile.jpg);
