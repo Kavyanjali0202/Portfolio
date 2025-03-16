@@ -494,52 +494,79 @@ nav ul li a:hover::after{
 
 }
 /* Project Section Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap');
+
 #projects {
     text-align: center;
-    padding: 50px 10%;
-    background-color: #000; /* Black background */
+    padding: 60px 10%;
+    background-color: #000;
+    /* Black background */
 }
 
 /* Flexbox Layout for Equal Heights */
 .project-container {
     display: flex;
-    justify-content: space-between; /* Ensures spacing between columns */
-    gap: 20px;
-    align-items: stretch; /* Ensures all cards are of equal height */
+    justify-content: space-between;
+    /* Ensures spacing between columns */
+    gap: 25px;
+    align-items: stretch;
+    /* Ensures all cards are of equal height */
+    flex-wrap: wrap;
 }
 
 /* Project Cards */
 .project-card {
-    flex: 1; /* Ensures equal width */
-    padding: 20px;
-    background-color: #111;
-    border-radius: 10px;
+    flex: 1;
+    /* Ensures equal width */
+    padding: 25px;
+    background: linear-gradient(135deg, #111, #222);
+    /* Gradient background */
+    border-radius: 12px;
     text-align: left;
     color: white;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     display: flex;
-    flex-direction: column; /* Aligns content properly */
-    justify-content: space-between; /* Makes text distribute evenly */
+    flex-direction: column;
+    /* Aligns content properly */
+    justify-content: space-between;
+    /* Makes text distribute evenly */
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
 }
 
 /* Hover Effect */
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 20px rgba(255, 0, 79, 0.3);
+    /* Subtle neon effect */
 }
 
 /* Project Titles */
 .project-title {
     color: #ff004f;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.8em;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Project Description */
+.project-card p {
+    font-size: 1em;
+    color: #ddd;
+    margin-top: 10px;
+    font-weight: 300;
 }
 
 /* Tech Stack Labels */
 .tech-stack {
-    margin-top: auto; /* Pushes tech stack to the bottom */
+    margin-top: auto;
+    /* Pushes tech stack to the bottom */
     color: #ff004f;
     font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Responsive Design */
